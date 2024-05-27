@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="SocialMediaDashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Social Media Dashboard</h1>
+        </header>
+        <main>
+            <section class="schedule-post">
+                <h2>Schedule a Post</h2>
+                <form id="post-form">
+                    <label for="platform">Platform:</label>
+                    <select id="platform" required>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                    </select>
+                    <label for="content">Content:</label>
+                    <textarea id="content" rows="4" required></textarea>
+                    <label for="schedule-date">Schedule Date:</label>
+                    <input type="date" id="schedule-date" required>
+                    <button type="submit">Schedule Post</button>
+                </form>
+            </section>
+            <section class="engagement-metrics">
+                <h2>Engagement Metrics</h2>
+                <canvas id="engagementChart"></canvas>
+            </section>
+            <section class="scheduled-posts">
+                <h2>Scheduled Posts</h2>
+                <ul id="scheduled-posts-list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="SocialMediaDasboard.js"></script>
+</body>
+</html>
